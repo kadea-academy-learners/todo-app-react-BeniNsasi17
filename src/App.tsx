@@ -3,7 +3,7 @@ import './App.css'
 
 
 function App() {
-  const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = useState<string[]>([]);
   const [input, setInput] = useState('');
   const addTodo = () => {
     if (input.trim()) {
